@@ -15,4 +15,6 @@ export class AppComponent {
   const queryParams = new URLSearchParams(document.location.search);
   const redirectUrl = queryParams.get("url");
   document.location = redirectUrl; // Noncompliant
+  document.location = document.location.hash.slice(1);
+
 }
