@@ -12,4 +12,7 @@ export class AppComponent {
   title = 'angular-sonar-analysis';
   ip = "192.168.12.42"; // Sensitive
   ip2 = "192.168.12.42"; // Sensitive
+  const queryParams = new URLSearchParams(document.location.search);
+  const redirectUrl = queryParams.get("url");
+  document.location = redirectUrl; // Noncompliant
 }
