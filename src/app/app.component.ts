@@ -9,7 +9,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'angular-sonar-analysis';
+  title = 'angular-sonar-analysis';;;
   ip = "192.168.12.42"; // Sensitive
   ip2 = "192.168.12.42"; // Sensitive
+  ip3 = "192.168.12.42"; // Sensitive
 }
