@@ -14,3 +14,11 @@ export class AppComponent {
   ip2 = "192.168.12.42"; // Sensitive
   ip3 = "192.168.12.42"; // Sensitive
 }
+
+function checkEqual(a, b) {
+  if (a == b) { // Noncompliant: using non-strict equality '=='
+    return "Equal";
+  } else {
+    return "Not equal";
+  }
+}
